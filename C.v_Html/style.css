@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .cv {
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    animation: fade-in 1s ease-in-out;
+  }
+
+  .header {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #66d9ef;
+  }
+
+  .title {
+    font-size: 24px;
+    color: #a6e22e;
+  }
+
+  .section {
+    margin-top: 20px;
+    animation: slide-up 1s ease-in-out;
+  }
+
+  .section h2 {
+    color: #f92672;
+    border-bottom: 2px solid #75715e;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .subsection {
+    margin-top: 10px;
+  }
+
+  .subsection h3 {
+    color: #a6e22e;
+    margin-bottom: 5px;
+  }
+
+  .details {
+    color: #e6db74;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .skill {
+    background-color: #a6e22e;
+    color: #272822;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .cv {
+      width: 95%;
+    }
+  
+    .name {
+      font-size: 24px;
+    }
+  
+    .title {
+      font-size: 18px;
+    }
+  
+    .section h2 {
+      font-size: 20px;
+    }
+  
+    .subsection h3 {
+      font-size: 16px;
+    }
+  
+    .details {
+      font-size: 14px;
+    }
+  
+    .skill {
+      font-size: 12px;
+    }
+  }
+  /* Responsive Styles for Tablets */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .cv {
+      width: 80%;
+    }
+  
+    .name {
+      font-size: 24px;
+    }
+  
+    .title {
+      font-size: 18px;
+    }
+  
+    .section h2 {
+      font-size: 20px;
+    }
+  
+    .subsection h3 {
+      font-size: 16px;
+    }
+  
+    .details {
+      font-size: 14px;
+    }
+  
+    .skill {
+      font-size: 12px;
+    }
+  }
+  
